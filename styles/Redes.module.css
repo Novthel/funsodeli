@@ -1,0 +1,39 @@
+.container {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.25s;
+}
+
+.container:hover {
+    padding: 1.1rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    gap: 1rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--primary);
+}
+
+@media (max-width:576px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .icon {
+        font-size: 1.3rem;
+    }
+}

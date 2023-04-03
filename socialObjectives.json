@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Capacitar Mujeres",
+        "description": "En areas que les permita desarrollar actividades economicas por cuenta propia.",
+        "image": "/img/icon/cap-mujer.png"
+    },
+    {
+        "id": 2,
+        "title": "Proteccion y Conservacion del Medio Ambiente",
+        "description": "Trabajar con la comunidad a traves de proyectos educativos, enfocados en procesos sostenibles, con impacto real en el medio ambiente.",
+        "image": "/img/icon/bombilla.png"
+    },
+    {
+        "id": 3,
+        "title": "Planes de Seguridad",
+        "description": "Incentivar planes de seguridad en la sociedad, orientar en los mismos y apoyar su ejecucion ",
+        "image": "/img/icon/candado.png"
+    },
+    {
+        "id": 4,
+        "title": "Eventos",
+        "description": "Proyectar, Organizar, Promover y/o participar en eventos deportivos, culturales,  academicos, sociales  y en general todos aquellos que sean necesarios para el logro de los objetivos de la fundacion",
+        "image": "/img/icon/eventos.png"
+    },
+    {
+        "id": 5,
+        "title": "Capacitacion a Jovenes",
+        "description": "Realizar programas para que cuenten con mayores oportunidades para crecer como personas y aportar a su propio desarrollo, el de sus familias y comunidades",
+        "image": "/img/icon/joven.png"
+    },
+    {
+        "id": 6,
+        "title": "Acompañamiento Comunidad Escolar",
+        "description": "Acompañamiento, asesoria, formacion y capacitacion a la Comunidad Escolar. + Capacitacion para Docentes +Capacitacion para Padres",
+        "image": "/img/icon/comunidad.png"
+    }
+
+]

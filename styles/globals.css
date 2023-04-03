@@ -1,0 +1,29 @@
+:root {
+  --primary:#E9791C;
+  --grey: #a19f9f;
+  --blue: rgb(8, 8, 114);
+  --background-principal: #edeff813;
+  --white: white;
+  --black: #0c0c0c;
+  --background-headermovil: rgba(31, 30, 30, 0.548);
+  --green: green;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background-principal);
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
