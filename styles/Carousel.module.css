@@ -4,7 +4,7 @@
     align-items: center;
     margin: 0 auto;
     overflow-x: hidden;
-    width: 70%;
+    max-width: 70%;
 }
 
 .slider {
@@ -23,4 +23,18 @@
     height: 100%;
     width: 100%;
     pointer-events: none;
+}
+
+@media screen and (max-width:992px) {
+    
+    .containerImg {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+ 
+    .containerImg {
+        width: 12rem;
+    }
 }

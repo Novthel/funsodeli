@@ -82,6 +82,7 @@
 @media screen and (max-width:992px) {
 
     .slogan {
+        top: 30px;
         font-size: 1.5rem;
     }
     
@@ -90,7 +91,7 @@
     }
     
     .sloganh1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .comments {
@@ -111,9 +112,10 @@
     }
     
     .logo {
-        width: 14%;
+        width: 18%;
     }
     .slogan {
+        top:70px;
         font-size: 1.3rem;
     }
     
@@ -126,6 +128,6 @@
     }
 
     .comments {
-        width: 90%;
+        width: 95%;
     }
 }

@@ -13,7 +13,7 @@ const Objective = () => {
                 {
                     social.map((obj)=> (
                             <motion.div className={ styles.card } key={ obj.id }
-                                whileHover={{ scale: 1.1 }}
+                                whileHover={{ scale: 1.05 }}
                             >
                                 <div className={ styles.imgCard }>
                                     <Image src={ obj.image } alt={ obj.title } width={80} height={80} />

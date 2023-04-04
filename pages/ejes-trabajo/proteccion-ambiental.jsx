@@ -16,7 +16,7 @@ export default function Protection() {
                 remaining essentially unchanged.
             </section>
 
-            <section className={ styles.carrusel }>
+            <section className={ styles.carousel }>
               <Carousel />
             </section>
 

@@ -1,8 +1,8 @@
 :root {
   --primary:#E9791C;
-  --grey: #a19f9f;
+  --grey: #757373;
   --blue: rgb(8, 8, 114);
-  --background-principal: #edeff813;
+  --background-principal: rgb(245,245,239);
   --white: white;
   --black: #0c0c0c;
   --background-headermovil: rgba(31, 30, 30, 0.548);
