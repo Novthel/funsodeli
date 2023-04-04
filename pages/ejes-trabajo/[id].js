@@ -1,42 +1,59 @@
 import Layout from "@/components/Layout";
-import Training from "@/components/Training";
-import { getItems } from "@/services/ItemService";
+import data from '../../data.json'
+import Image from 'next/image'
+import style from '../../styles/Training.module.css'
+import { BsCheck2Circle } from "react-icons/bs";
 
 
-export default function ListTrainings({training}) {
+export default function Training({ userData }) {
+
+    const { title, img, training } = userData
+
   return (
     <Layout>
-        <Training item={ training } />
+        <section className={ style.container }>
+            <div className={ style.card }>
+                <div className={ style.cardHeader }>
+                    <h2> { title } </h2>
+                </div>
+                <div className={ style.cardImage }>
+                    <Image src={ img } alt={ title } width={500} height={ 300 } priority /> 
+                </div>
+                <ul className={ style.cardText }>
+                    { 
+                        training && training.map((t,i)=>(
+                        <div key={i}>
+                            <li><p><BsCheck2Circle style={{ color: 'green '}} />  {t.item}</p></li>
+                        </div>
+                        ))
+                    }
+                </ul>
+            </div>
+
+        </section>  
     </Layout>
   )
 }
 
 
 export async function getStaticPaths(){
-    const items = await getItems()
-    const paths = items.map( item => {
-        return {
-            params: {
-                id: item.id.toString()
-            }
-        }
-    })
+    const ids = data.map(({ id }) => id);
+    const paths = ids.map((id) => ({ params: { id: id.toString() } }));
     return {
-        paths: paths,
-        fallback: false
-    }  
+      paths,
+      fallback: false,
+    };
 }
 
 
-export async function getStaticProps({ params }){
-    const id = params.id
-
-    const items = await getItems()
-    const res = items.find(item => item.id.toString() === id)
+export async function getStaticProps(context){
+    
+    const userData = data[context.params.id - 1]
 
     return {
         props:{
-            training: res
+            data,
+            userData,
           }
     }
 

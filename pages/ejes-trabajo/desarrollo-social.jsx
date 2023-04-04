@@ -3,7 +3,7 @@ import styles from '../../styles/SocialDev.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { getItems } from '@/services/ItemService';
+import data from '../../data.json'
 
 
 const container = {
@@ -68,7 +68,7 @@ export default function SocialDev({ trainings }) {
 
 
 export async function getStaticProps(){
-  const res = await getItems()
+  const res = data
 
   return {
     props:{
